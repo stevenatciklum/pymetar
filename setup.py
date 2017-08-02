@@ -15,18 +15,18 @@
 
 from distutils.core import setup
 
-import pymetar
+lib_version=0.3
 
-setup(name="pymetar", version=pymetar.__version__,
+setup(name="pymetar", version=lib_version,
       license="GNU GPL",
-      description=pymetar.__doc__,
+      description="A module to fetch and parse METAR reports",
       author="Tobias Klausmann",
       author_email="klausman-pymetar@schwarzvogel.de",
       url="http://www.schwarzvogel.de/software-pymetar.shtml",
       packages=[""],
       py_modules=["pymetar"],
       scripts=["bin/pymetar"],
-      data_files=[("share/doc/pymetar-%s" % pymetar.__version__,
+      data_files=[("share/doc/pymetar-%s" % lib_version,
                    ['README.md', 'COPYING', 'THANKS', 'librarydoc.txt']),
                   ("share/man/man1", ['pymetar.1'])],
       install_requires=['future']
