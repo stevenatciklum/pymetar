@@ -27,6 +27,7 @@ setup(name="pymetar", version=pymetar.__version__,
       py_modules=["pymetar"],
       scripts=["bin/pymetar"],
       data_files=[("share/doc/pymetar-%s" % pymetar.__version__,
-                   ['README', 'COPYING', 'THANKS', 'librarydoc.txt']),
-                  ("share/man/man1", ['pymetar.1'])]
+                   ['README.md', 'COPYING', 'THANKS', 'librarydoc.txt']),
+                  ("share/man/man1", ['pymetar.1'])],
+      install_requires=['future']
       )
